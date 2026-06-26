@@ -1,10 +1,10 @@
 ---
 name: docs
-description: Documentation generation. Triggers on /forge:docs. Reads actual code to produce README, API reference, architecture doc, or runbook. Never guesses.
+description: Documentation generation. Triggers on /codeforge:docs. Reads actual code to produce README, API reference, architecture doc, or runbook. Never guesses.
 allowed-tools: Read, Write, Grep, Glob, Bash(git log:*)
 ---
 
-# forge:docs
+# codeforge:docs
 
 ## Doc type
 

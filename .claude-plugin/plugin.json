@@ -1,15 +1,15 @@
 {
-  "name": "forge",
-  "displayName": "Forge",
-  "version": "1.0.0",
-  "description": "Forge — production-grade AI coding toolkit. Code review, PR review, security, TDD, architecture, docs, simplification, evals, and coding standards. Model-adaptive: same output quality across Claude, GPT-4o, Gemini, and Haiku.",
+  "name": "codeforge",
+  "displayName": "CodeForge",
+  "version": "1.0.3",
+  "description": "CodeForge — production-grade AI coding toolkit. Code review, PR review, security, TDD, architecture, docs, simplification, evals, and coding standards. Model-adaptive: same output quality across Claude, GPT-4o, Gemini, and Haiku.",
   "author": {
     "name": "Prashantxo",
-    "url": "https://github.com/Prashantxo/Forge"
+    "url": "https://github.com/Prashantxo/CodeForge"
   },
   "license": "MIT",
   "keywords": [
-    "forge",
+    "codeforge",
     "code-review",
     "pr-review",
     "security",

@@ -1,5 +1,5 @@
 ---
-name: forge:arch
+name: codeforge:arch
 description: Forge architecture review or design. Pass a description to design new system; blank to review existing.
 argument-hint: [system description | blank to review existing]
 allowed-tools: Read, Grep, Glob

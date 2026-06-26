@@ -139,8 +139,8 @@ jobs:
       - name: Windsurf
         run: |
           [ -f ".windsurfrules" ] || { echo "MISSING: .windsurfrules"; exit 1; }
-          [ -f ".windsurf/rules/forge.md" ] || { echo "MISSING: .windsurf/rules/forge.md"; exit 1; }
-          grep -q "trigger:" .windsurf/rules/forge.md || { echo "MISSING trigger: in .windsurf/rules/forge.md"; exit 1; }
+          [ -f ".windsurf/rules/codeforge.md" ] || { echo "MISSING: .windsurf/rules/codeforge.md"; exit 1; }
+          grep -q "trigger:" .windsurf/rules/codeforge.md || { echo "MISSING trigger: in .windsurf/rules/codeforge.md"; exit 1; }
           echo "  OK  Windsurf"
 
       - name: Zed
@@ -150,15 +150,15 @@ jobs:
 
       - name: Kiro
         run: |
-          [ -f ".kiro/steering/forge.md" ] || { echo "MISSING: .kiro/steering/forge.md"; exit 1; }
-          grep -q "inclusion:" .kiro/steering/forge.md || { echo "MISSING inclusion: in .kiro/steering/forge.md"; exit 1; }
+          [ -f ".kiro/steering/codeforge.md" ] || { echo "MISSING: .kiro/steering/codeforge.md"; exit 1; }
+          grep -q "inclusion:" .kiro/steering/codeforge.md || { echo "MISSING inclusion: in .kiro/steering/codeforge.md"; exit 1; }
           [ -f ".kiro/hooks/pre-tool-use.sh" ] || { echo "MISSING: .kiro/hooks/pre-tool-use.sh"; exit 1; }
           [ -f ".kiro/hooks/post-tool-use.sh" ] || { echo "MISSING: .kiro/hooks/post-tool-use.sh"; exit 1; }
           echo "  OK  Kiro"
 
       - name: Cline
         run: |
-          [ -f ".clinerules/forge.md" ] || { echo "MISSING: .clinerules/forge.md"; exit 1; }
+          [ -f ".clinerules/codeforge.md" ] || { echo "MISSING: .clinerules/codeforge.md"; exit 1; }
           [ -f ".clinerules/hooks/PreToolUse" ] || { echo "MISSING: .clinerules/hooks/PreToolUse"; exit 1; }
           [ -f ".clinerules/hooks/PostToolUse" ] || { echo "MISSING: .clinerules/hooks/PostToolUse"; exit 1; }
           head -1 .clinerules/hooks/PreToolUse | grep -q "^#!" || { echo "MISSING shebang in PreToolUse"; exit 1; }
@@ -228,7 +228,7 @@ jobs:
       - name: Agents — all 3 present
         run: |
           FAILED=0
-          for agent in forge-reviewer forge-architect forge-analyst; do
+          for agent in codeforge-reviewer codeforge-architect codeforge-analyst; do
             [ -f "agents/$agent.md" ] \
               && echo "  OK  agents/$agent.md" \
               || { echo "MISS  agents/$agent.md"; FAILED=1; }
@@ -239,7 +239,7 @@ jobs:
         run: |
           VERDICT="BLOCK | REQUEST CHANGES | APPROVE WITH NOTES | APPROVE"
           FAILED=0
-          for f in "skills/review/SKILL.md" "commands/review.md" "agents/forge-reviewer.md"; do
+          for f in "skills/review/SKILL.md" "commands/review.md" "agents/codeforge-reviewer.md"; do
             grep -q "$VERDICT" "$f" \
               && echo "  OK  $f" \
               || { echo "FAIL  $f — verdict enum missing or inconsistent"; FAILED=1; }

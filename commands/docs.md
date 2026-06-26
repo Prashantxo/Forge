@@ -1,5 +1,5 @@
 ---
-name: forge:docs
+name: codeforge:docs
 description: "Forge documentation generator: README, API reference, architecture doc, or runbook. Reads actual code."
 argument-hint: [target file/module | blank for README]
 allowed-tools: Read, Write, Grep, Glob, Bash(git log:*)

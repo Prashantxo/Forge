@@ -1,10 +1,10 @@
 ---
 name: review
-description: Multi-dimensional code review. Triggers on /forge:review or PR review. Correctness, security, performance, type safety, tests, standards.
+description: Multi-dimensional code review. Triggers on /codeforge:review or PR review. Correctness, security, performance, type safety, tests, standards.
 allowed-tools: Read, Grep, Glob, Bash(git diff:*), Bash(git log:*)
 ---
 
-# forge:review
+# codeforge:review
 
 ## Checklist
 

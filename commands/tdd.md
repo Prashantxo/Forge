@@ -1,5 +1,5 @@
 ---
-name: forge:tdd
+name: codeforge:tdd
 description: "Forge TDD cycle: write failing tests first, get approval, implement, refactor"
 argument-hint: [feature or bug description]
 allowed-tools: Read, Write, Edit, Grep, Glob, Bash(npm test:*), Bash(pytest:*), Bash(go test:*), Bash(cargo test:*), Bash(jest:*), Bash(vitest:*)

@@ -1,10 +1,10 @@
 ---
 name: arch
-description: Architecture review and design. Triggers on /forge:arch. Scalability, reliability, consistency, observability, security, ops.
+description: Architecture review and design. Triggers on /codeforge:arch. Scalability, reliability, consistency, observability, security, ops.
 allowed-tools: Read, Grep, Glob
 ---
 
-# forge:arch
+# codeforge:arch
 
 ## Dimensions
 

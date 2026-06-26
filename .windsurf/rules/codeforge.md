@@ -2,22 +2,22 @@
 trigger: always_on
 ---
 
-# Forge — AI Coding Toolkit
+# CodeForge — AI Coding Toolkit
 
-Apply Forge skills automatically based on task context.
+Apply CodeForge skills automatically based on task context.
 
 ## Skills
 
 | Task | Skill |
 |------|-------|
-| Code review, PR review | forge:review |
-| Security audit | forge:secure |
-| Architecture review or design | forge:arch |
-| New feature or bug fix | forge:tdd |
-| Documentation | forge:docs |
-| Code cleanup | forge:refine |
-| AI/LLM feature | forge:eval |
-| Code quality check | forge:standards |
+| Code review, PR review | codeforge:review |
+| Security audit | codeforge:secure |
+| Architecture review or design | codeforge:arch |
+| New feature or bug fix | codeforge:tdd |
+| Documentation | codeforge:docs |
+| Code cleanup | codeforge:refine |
+| AI/LLM feature | codeforge:eval |
+| Code quality check | codeforge:standards |
 
 ## Review output format
 

@@ -1,4 +1,4 @@
-# Contributing to Forge
+# Contributing to CodeForge
 
 ## Ways to contribute
 
@@ -10,12 +10,12 @@
 ## Setup
 
 ```bash
-git clone https://github.com/Prashantxo/forge
-cd forge
+git clone https://github.com/Prashantxo/CodeForge
+cd codeforge
 claude plugin validate
 ```
 
-No dependencies to install. Forge is pure prompt instructions + JSON config.
+No dependencies to install. CodeForge is pure prompt instructions + JSON config.
 
 ## Adding a skill
 
@@ -34,7 +34,7 @@ description: One sentence. Triggers on X. Does Y.
 allowed-tools: Read, Grep, Glob
 ---
 
-# forge:<name>
+# codeforge:<name>
 
 > Source rules/model-adapter.md for tier.
 
@@ -49,7 +49,7 @@ allowed-tools: Read, Grep, Glob
 **agents/openai.yaml structure:**
 ```yaml
 interface:
-  display_name: "Forge <Name>"
+  display_name: "CodeForge <Name>"
   short_description: "One sentence for Codex/OpenAI context."
   brand_color: "#RRGGBB"
   default_prompt: "Use $<name> to <action>."

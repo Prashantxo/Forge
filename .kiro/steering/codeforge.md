@@ -2,7 +2,7 @@
 inclusion: always
 ---
 
-# Forge — AI Coding Toolkit
+# CodeForge — AI Coding Toolkit
 
 Forge provides structured workflows for code review, security, TDD, architecture, docs, and evals.
 
@@ -10,14 +10,14 @@ Forge provides structured workflows for code review, security, TDD, architecture
 
 | Context | Skill to apply |
 |---------|---------------|
-| Reviewing code or PR | forge:review |
-| Code touches auth, inputs, secrets, APIs | forge:secure |
-| Architecture or system design | forge:arch |
-| New feature or bug | forge:tdd |
-| Documentation needed | forge:docs |
-| Simplifying recent changes | forge:refine |
-| LLM feature changing | forge:eval |
-| Code quality or new module | forge:standards |
+| Reviewing code or PR | codeforge:review |
+| Code touches auth, inputs, secrets, APIs | codeforge:secure |
+| Architecture or system design | codeforge:arch |
+| New feature or bug | codeforge:tdd |
+| Documentation needed | codeforge:docs |
+| Simplifying recent changes | codeforge:refine |
+| LLM feature changing | codeforge:eval |
+| Code quality or new module | codeforge:standards |
 
 ## Review output format
 

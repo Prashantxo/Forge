@@ -1,10 +1,10 @@
 ---
 name: refine
-description: Code simplification without behavior change. Triggers on /forge:refine. Removes duplication, improves naming, flattens nesting, deletes dead code.
+description: Code simplification without behavior change. Triggers on /codeforge:refine. Removes duplication, improves naming, flattens nesting, deletes dead code.
 allowed-tools: Read, Write, Edit, Grep, Glob, Bash(git diff:*)
 ---
 
-# forge:refine
+# codeforge:refine
 
 ## What to fix
 

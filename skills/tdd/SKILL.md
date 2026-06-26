@@ -1,10 +1,10 @@
 ---
 name: tdd
-description: Test-driven development enforcer. Triggers on /forge:tdd. Writes failing tests first, stops for approval, then implements minimum code, then refactors.
+description: Test-driven development enforcer. Triggers on /codeforge:tdd. Writes failing tests first, stops for approval, then implements minimum code, then refactors.
 allowed-tools: Read, Write, Edit, Grep, Glob, Bash(npm test:*), Bash(pytest:*), Bash(go test:*), Bash(cargo test:*), Bash(jest:*), Bash(vitest:*)
 ---
 
-# forge:tdd
+# codeforge:tdd
 
 ## Phases
 

@@ -4,7 +4,7 @@ description: AI/LLM engineering patterns. Triggers when building agents, prompts
 allowed-tools: Read, Grep, Glob
 ---
 
-# forge:agentic
+# codeforge:agentic
 
 ## Model selection by capability
 
@@ -56,7 +56,7 @@ Anti-patterns: "be helpful", "do your best", giant unstructured system prompts.
 Orchestrator
 ├── Researcher  (read-only, Explore agent)
 ├── Implementer (write, isolated worktree)
-└── Reviewer    (read-only, forge-reviewer)
+└── Reviewer    (read-only, codeforge-reviewer)
 ```
 
 Use `context: fork` for sub-agents that must not affect main context.

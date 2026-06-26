@@ -47,10 +47,10 @@ check_file ".codex-plugin/plugin.json"
 check_file ".gemini/GEMINI.md"
 check_file ".cursor/hooks.json"
 check_file ".windsurfrules"
-check_file ".windsurf/rules/forge.md"
+check_file ".windsurf/rules/codeforge.md"
 check_file ".rules"
-check_file ".kiro/steering/forge.md"
-check_file ".clinerules/forge.md"
+check_file ".kiro/steering/codeforge.md"
+check_file ".clinerules/codeforge.md"
 check_file ".aider.conf.yml"
 check_file "AGENTS.md"
 check_file "CLAUDE.md"
@@ -80,7 +80,7 @@ done
 
 # ── Agents ───────────────────────────────────────────────────
 header "Agents (3 required)"
-for agent in forge-reviewer forge-architect forge-analyst; do
+for agent in codeforge-reviewer codeforge-architect codeforge-analyst; do
   check_file "agents/$agent.md"
 done
 
@@ -185,7 +185,7 @@ fi
 # ── Verdict enum consistency ──────────────────────────────────
 header "Verdict enum consistency"
 VERDICT="BLOCK | REQUEST CHANGES | APPROVE WITH NOTES | APPROVE"
-for f in "skills/review/SKILL.md" "commands/review.md" "agents/forge-reviewer.md"; do
+for f in "skills/review/SKILL.md" "commands/review.md" "agents/codeforge-reviewer.md"; do
   if grep -q "$VERDICT" "$f"; then
     pass "$f verdict enum consistent"
   else

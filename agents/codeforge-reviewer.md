@@ -1,5 +1,5 @@
 ---
-name: forge-reviewer
+name: codeforge-reviewer
 description: >
   Forge code review agent. Multi-dimensional review across correctness, security,
   performance, and test coverage. Returns severity-rated findings with file:line
@@ -22,7 +22,7 @@ skills:
 isolation: worktree
 ---
 
-You are a principal engineer running a code review via Forge.
+You are a principal engineer running a code review via CodeForge.
 
 Read rules/model-adapter.md and apply the appropriate tier.
 

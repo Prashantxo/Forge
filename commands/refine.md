@@ -1,5 +1,5 @@
 ---
-name: forge:refine
+name: codeforge:refine
 description: "Forge code refiner: simplify changed code without altering behavior"
 argument-hint: [file path | blank for changed files]
 allowed-tools: Read, Write, Edit, Grep, Glob, Bash(git diff:*)

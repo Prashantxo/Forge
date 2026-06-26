@@ -1,10 +1,10 @@
 ---
 name: secure
-description: Security audit. Triggers on /forge:secure or code touching auth, inputs, APIs, payments, secrets. OWASP Top 10 plus supply chain.
+description: Security audit. Triggers on /codeforge:secure or code touching auth, inputs, APIs, payments, secrets. OWASP Top 10 plus supply chain.
 allowed-tools: Read, Grep, Glob, Bash(npm audit:*), Bash(pip-audit:*)
 ---
 
-# forge:secure
+# codeforge:secure
 
 ## Threat model (state before scanning)
 1. Assets at risk  2. Trust boundaries  3. Likely attacker

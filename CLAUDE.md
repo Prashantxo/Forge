@@ -1,26 +1,26 @@
-# Forge
+# CodeForge
 
 AI coding toolkit for Claude Code. Installable as a Claude Code plugin.
 
 ## Install
 
 ```bash
-npx claudepluginhub install forge
-claude plugin install <your-github-username>/forge
+npx claudepluginhub install codeforge
+claude plugin install <your-github-username>/codeforge
 ```
 
 ## Commands
 
 | Command | What It Does |
 |---------|-------------|
-| `/forge:review` | Code + security review on current diff or PR |
-| `/forge:secure` | OWASP Top 10 security audit |
-| `/forge:arch` | Architecture review or design |
-| `/forge:tdd` | TDD cycle: failing tests first |
-| `/forge:docs` | Generate documentation |
-| `/forge:refine` | Simplify changed code without behavior change |
-| `/forge:eval` | Define or run evals for AI features |
-| `/forge:standards` | Coding standards review |
+| `/codeforge:review` | Code + security review on current diff or PR |
+| `/codeforge:secure` | OWASP Top 10 security audit |
+| `/codeforge:arch` | Architecture review or design |
+| `/codeforge:tdd` | TDD cycle: failing tests first |
+| `/codeforge:docs` | Generate documentation |
+| `/codeforge:refine` | Simplify changed code without behavior change |
+| `/codeforge:eval` | Define or run evals for AI features |
+| `/codeforge:standards` | Coding standards review |
 
 ## Skills
 
@@ -30,7 +30,7 @@ Each skill has `agents/openai.yaml` for Codex/OpenAI cross-platform use.
 
 ## Agents
 
-`forge-reviewer` `forge-architect` `forge-analyst`
+`codeforge-reviewer` `codeforge-architect` `codeforge-analyst`
 
 ## Principles
 
@@ -62,7 +62,7 @@ DISCOVER → DESIGN → TEST (failing) → IMPLEMENT → EVAL → REVIEW → REF
 ```
 skills/<name>/SKILL.md              # skill instructions
 skills/<name>/agents/openai.yaml    # cross-platform metadata
-agents/forge-<name>.md              # agent definition
+agents/codeforge-<name>.md              # agent definition
 commands/<name>.md                  # slash command
 ```
 
@@ -73,7 +73,7 @@ Validate: `claude plugin validate .`
 | Variable | Used By | Purpose |
 |----------|---------|---------|
 | `GITHUB_TOKEN` | MCP github server | GitHub API access |
-| `FORGE_TIER` | All commands | Override model tier: `max`, `standard`, `fast` |
+| `CODEFORGE_TIER` | All commands | Override model tier: `max`, `standard`, `fast` |
 
 ---
 
@@ -99,7 +99,7 @@ flaky in headless CI), local validation is authoritative.
 ### Git setup
 
 - Working branch: `fresh-main`
-- Remote: `https://github.com/Prashantxo/Forge.git`
+- Remote: `https://github.com/Prashantxo/CodeForge.git`
 - Push: `git push origin fresh-main:main`
 - **All commits must use author `Prashant Tomar <mythd2000@gmail.com>`**
   ```bash
@@ -114,7 +114,7 @@ flaky in headless CI), local validation is authoritative.
 - GitHub tokens shared in chat should be revoked immediately after use.
 - The `gh` CLI uses an OAuth token (`gho_`) that has `repo` + `workflow`
   scopes but not `contents:write`, so it cannot create GitHub releases.
-  Create releases manually at https://github.com/Prashantxo/Forge/releases/new
+  Create releases manually at https://github.com/Prashantxo/CodeForge/releases/new
   or refresh auth: `gh auth refresh -h github.com -s write:packages,contents`
 
 ### Release process
@@ -125,7 +125,7 @@ flaky in headless CI), local validation is authoritative.
 4. Commit with correct author.
 5. Push: `git push origin fresh-main:main`
 6. Tag: `git tag vX.Y.Z && git push origin vX.Y.Z`
-7. Create release at https://github.com/Prashantxo/Forge/releases/new:
+7. Create release at https://github.com/Prashantxo/CodeForge/releases/new:
    - Tag: `vX.Y.Z` (already pushed)
    - Title: `vX.Y.Z - <one-line summary>`
    - Body: what changed, security fixes, upgrade instructions
@@ -164,10 +164,10 @@ Each AI editor reads different config. All must be kept in sync:
 | OpenAI Codex | `.codex-plugin/plugin.json`, `AGENTS.md` |
 | Gemini CLI | `.gemini/GEMINI.md` |
 | Cursor | `.cursor/hooks.json` |
-| Windsurf | `.windsurfrules`, `.windsurf/rules/forge.md` (needs `trigger:`) |
+| Windsurf | `.windsurfrules`, `.windsurf/rules/codeforge.md` (needs `trigger:`) |
 | Zed | `.rules` |
-| Kiro | `.kiro/steering/forge.md` (needs `inclusion:`), `.kiro/hooks/` |
-| Cline | `.clinerules/forge.md`, `.clinerules/hooks/PreToolUse` + `PostToolUse` |
+| Kiro | `.kiro/steering/codeforge.md` (needs `inclusion:`), `.kiro/hooks/` |
+| Cline | `.clinerules/codeforge.md`, `.clinerules/hooks/PreToolUse` + `PostToolUse` |
 | Aider | `.aider.conf.yml` |
 
 `AGENTS.md` is the cross-platform fallback. Codex, Zed, Aider, and Cline
@@ -191,5 +191,5 @@ all read it. Keep it accurate.
 - All hook scripts have shebangs
 - No hardcoded secrets (patterns: `sk-`, `AKIA`, `ghp_`)
 - Verdict enum `BLOCK | REQUEST CHANGES | APPROVE WITH NOTES | APPROVE` consistent
-  across `skills/review/SKILL.md`, `commands/review.md`, `agents/forge-reviewer.md`
+  across `skills/review/SKILL.md`, `commands/review.md`, `agents/codeforge-reviewer.md`
 - No stale `> Source rules/model-adapter.md` lines in skill files

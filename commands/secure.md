@@ -1,5 +1,5 @@
 ---
-name: forge:secure
+name: codeforge:secure
 description: "Forge security audit: OWASP Top 10 scan on changed files or a specified path"
 argument-hint: [file-path | blank for changed files]
 allowed-tools: Read, Grep, Glob, Bash(git diff:*), Bash(npm audit:*), Bash(pip-audit:*)
@@ -25,7 +25,7 @@ State before scanning:
 3. Likely attacker (external, insider, supply chain)
 
 ### Phase 3: SCAN
-Apply `forge:secure` skill checklist:
+Apply `codeforge:secure` skill checklist:
 
 | Class | What to check |
 |-------|--------------|

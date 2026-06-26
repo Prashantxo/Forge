@@ -1,5 +1,5 @@
 ---
-name: forge:review
+name: codeforge:review
 description: "Forge code review: local uncommitted changes or PR (pass PR number/URL)"
 argument-hint: [pr-number | pr-url | blank for local]
 allowed-tools: Read, Grep, Glob, Bash(git diff:*), Bash(git log:*), Bash(git show:*), Bash(gh pr:*)
@@ -32,7 +32,7 @@ Read `CLAUDE.md` and `AGENTS.md` for project conventions.
 Read each changed file in full, not just diff hunks.
 
 ### Phase 3: REVIEW
-Apply `forge:review` and `forge:secure` skills.
+Apply `codeforge:review` and `codeforge:secure` skills.
 
 | Category | Checks |
 |----------|--------|

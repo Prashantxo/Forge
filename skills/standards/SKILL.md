@@ -1,10 +1,10 @@
 ---
 name: standards
-description: Cross-project coding standards. Triggers on /forge:review or new module setup. Naming, typing, immutability, KISS/DRY/YAGNI, error handling, observability.
+description: Cross-project coding standards. Triggers on /codeforge:review or new module setup. Naming, typing, immutability, KISS/DRY/YAGNI, error handling, observability.
 allowed-tools: Read, Grep, Glob
 ---
 
-# forge:standards
+# codeforge:standards
 
 ## Naming
 

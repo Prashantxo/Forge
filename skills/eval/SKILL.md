@@ -1,10 +1,10 @@
 ---
 name: eval
-description: Eval-driven development for AI features. Triggers on /forge:eval or when any LLM-powered feature, prompt, or agent changes. Define pass/fail before implementing.
+description: Eval-driven development for AI features. Triggers on /codeforge:eval or when any LLM-powered feature, prompt, or agent changes. Define pass/fail before implementing.
 allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
-# forge:eval
+# codeforge:eval
 
 ## Workflow
 

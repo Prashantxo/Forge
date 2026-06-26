@@ -1,5 +1,5 @@
 ---
-name: forge:standards
+name: codeforge:standards
 description: "Forge coding standards review: naming, typing, error handling, observability, KISS/DRY/YAGNI."
 argument-hint: [file-path | blank for changed files]
 allowed-tools: Read, Grep, Glob, Bash(git diff:*)
@@ -31,7 +31,7 @@ No files → stop: "Nothing to review."
 
 ## Phase 2: REVIEW
 
-Apply `forge:standards` skill.
+Apply `codeforge:standards` skill.
 
 | Category | Checks |
 |----------|--------|

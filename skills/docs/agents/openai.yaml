@@ -1,5 +1,5 @@
 interface:
-  display_name: "Forge Docs"
+  display_name: "CodeForge Docs"
   short_description: "Documentation generation — README, API reference, architecture docs, runbooks"
   brand_color: "#3B82F6"
   default_prompt: "Use $docs to generate documentation by reading actual code."

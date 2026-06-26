@@ -1,5 +1,5 @@
 ---
-name: forge:eval
+name: codeforge:eval
 description: "Forge eval-driven development: define evals before implementing AI features, track pass@k"
 argument-hint: [feature name | blank to run existing evals]
 allowed-tools: Read, Write, Edit, Bash, Grep, Glob

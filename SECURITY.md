@@ -11,7 +11,7 @@
 **Do not open a public issue for security vulnerabilities.**
 
 Report vulnerabilities privately via GitHub Security Advisories:
-1. Go to `https://github.com/Prashantxo/forge/security/advisories`
+1. Go to `https://github.com/Prashantxo/CodeForge/security/advisories`
 2. Click **New draft security advisory**
 3. Describe the vulnerability, steps to reproduce, and impact
 

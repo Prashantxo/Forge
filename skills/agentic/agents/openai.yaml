@@ -1,5 +1,5 @@
 interface:
-  display_name: "Forge Agentic"
+  display_name: "CodeForge Agentic"
   short_description: "AI/LLM engineering — agents, MCP servers, prompts, evals, cost routing"
   brand_color: "#06B6D4"
   default_prompt: "Use $agentic for AI engineering patterns, model selection, and MCP server design."

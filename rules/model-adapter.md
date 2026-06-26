@@ -12,8 +12,8 @@ Detect tier by capability signals instead:
 |--------|--------------|
 | Context window | > 100k tokens → likely MAX or STANDARD |
 | Reasoning depth | Can the model follow 5+ step chains reliably? → STANDARD or MAX |
-| Speed / cost constraint | Explicitly set `FORGE_TIER=fast` in env → FAST |
-| Explicit override | `FORGE_TIER=max|standard|fast` env var → use that |
+| Speed / cost constraint | Explicitly set `CODEFORGE_TIER=fast` in env → FAST |
+| Explicit override | `CODEFORGE_TIER=max|standard|fast` env var → use that |
 | Unknown / local model | Default to STANDARD |
 
 **Default when uncertain: STANDARD.**
@@ -40,7 +40,7 @@ Detect tier by capability signals instead:
 - One sentence of reasoning per finding
 - Skip cosmetic/optional checks
 - Structured output without elaboration
-- Default for all Forge commands
+- Default for all CodeForge commands
 
 ### FAST
 - Collapse to 3 phases: GATHER → ANALYZE → REPORT
@@ -60,5 +60,5 @@ Output schema is identical across all tiers, so tooling can parse any tier's out
 ## Local model notes
 
 Local models (Gemma, Qwen, Kimi, Llama, Mistral, Phi, etc.) use STANDARD by default.
-Set `FORGE_TIER=fast` if the model has a small context window or slow inference.
-Forge commands are table-driven and low-prose, and work well on smaller models.
+Set `CODEFORGE_TIER=fast` if the model has a small context window or slow inference.
+CodeForge commands are table-driven and low-prose, and work well on smaller models.

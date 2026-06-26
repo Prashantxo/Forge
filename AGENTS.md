@@ -12,11 +12,11 @@ Works with any model — cloud or local.
 ## Architecture
 
 ```
-/forge:review  /forge:arch  /forge:tdd  /forge:docs  /forge:refine
+/codeforge:review  /codeforge:arch  /codeforge:tdd  /codeforge:docs  /codeforge:refine
         │
         ▼
   Forge Agent
-  (forge-reviewer | forge-architect | forge-analyst)
+  (codeforge-reviewer | codeforge-architect | codeforge-analyst)
         │
         ▼
   rules/model-adapter.md  →  tier: MAX | STANDARD | FAST
@@ -33,12 +33,12 @@ Works with any model — cloud or local.
 
 | Agent | Capability needed | Role |
 |-------|------------------|------|
-| forge-reviewer | STANDARD or above | Code review — correctness, security, perf, tests |
-| forge-architect | MAX preferred | Architecture — diagrams, ADRs, verdicts |
-| forge-analyst | STANDARD or above | Research — adversarially verified, confidence-rated |
+| codeforge-reviewer | STANDARD or above | Code review — correctness, security, perf, tests |
+| codeforge-architect | MAX preferred | Architecture — diagrams, ADRs, verdicts |
+| codeforge-analyst | STANDARD or above | Research — adversarially verified, confidence-rated |
 
 Agents inherit the active model from the host. No model IDs hardcoded.
-Set `FORGE_TIER=max|standard|fast` to override tier detection.
+Set `CODEFORGE_TIER=max|standard|fast` to override tier detection.
 
 ## Skills
 
