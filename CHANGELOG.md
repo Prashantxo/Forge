@@ -3,23 +3,17 @@
 All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 Versions follow [Semantic Versioning](https://semver.org/).
 
-## [1.0.3] - 2026-06-26
-
-### Changed
-- Brand name casing: Codeforge → CodeForge across all docs and display names
-
-## [1.0.2] - 2026-06-26
-
-### Changed
-- Complete rename: all agent names, platform config files, repo URLs, env var, brand text updated to CodeForge
-- Renamed agent files: forge-* → codeforge-*
-- Renamed platform config files: forge.md → codeforge.md (Windsurf, Kiro, Cline)
-- FORGE_TIER env var → CODEFORGE_TIER
-
 ## [1.0.1] - 2026-06-26
 
 ### Changed
-- Renamed plugin from `forge` to `codeforge` to avoid marketplace name collision with existing `forge` plugin
+- Renamed plugin `forge` → `codeforge` (marketplace slug) to avoid name collision
+- Brand name: Forge → CodeForge across all docs and display names
+- Agent files: `forge-*` → `codeforge-*`
+- Platform configs: `forge.md` → `codeforge.md` (Windsurf, Kiro, Cline)
+- Skill namespace: `forge:*` → `codeforge:*`
+- Env var: `FORGE_TIER` → `CODEFORGE_TIER`
+- Repo: `Prashantxo/Forge` → `Prashantxo/CodeForge`
+- CI workflow paths updated to match renamed files
 
 ## [1.0.0] - 2026-06-24
 

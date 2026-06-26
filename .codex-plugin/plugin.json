@@ -1,6 +1,6 @@
 {
   "name": "codeforge",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "description": "CodeForge — model-adaptive AI coding toolkit. Code review, security, TDD, architecture, docs, and evals. Same output quality across Claude, GPT-4o, and Gemini.",
   "author": {
     "name": "Prashantxo",

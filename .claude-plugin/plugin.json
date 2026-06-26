@@ -1,7 +1,7 @@
 {
   "name": "codeforge",
   "displayName": "CodeForge",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "description": "CodeForge — production-grade AI coding toolkit. Code review, PR review, security, TDD, architecture, docs, simplification, evals, and coding standards. Model-adaptive: same output quality across Claude, GPT-4o, Gemini, and Haiku.",
   "author": {
     "name": "Prashantxo",
